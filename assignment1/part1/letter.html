@@ -3,34 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--------
+    <!--
        Name: Ayomide Akerele
        file: letter.html
        date: Jan, 2025
        -->
+       <style>
+        body {
+  font: 1.2em / 1.5 system-ui;
+}
+
+.sender-column {
+  text-align: right;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+       </style>
+      
     <title>Document</title>
 </head>
 <body>
     
-   <address>
-        <h2>Dr. Eleanor Gaye</h2>
+   <address class="sender-column">
+        <strong>Dr. Eleanor Gaye</strong><br>
     Awesome Science faculty<br>
     University of Awesome<br>
     Bobtown, CA 99999<br>
     USA<br>
-   Tel: 123-456-7890<br>
-   Email: no_reply@example.com<br>
+  <strong> Tel:</strong>123-456-7890<br>
+   <strong>Email:</strong>no_reply@example.com<br>
    </address>
+<p class="sender-column"></p>
+<time datetime="2016-01-20">20 January 2016</time>
 
-<p>20 January 2016</p>
-
-<p>
-    <h2>Miss Eileen Dover</h2>
+<address>
+   <strong>Miss Eileen Dover</strong><br>
     4321 Cliff Top Edge<br>
     Dover, CT9 XXX<br>
     UK
-    
-</p>
+</address>
 
 <h1>Re: Eileen Dover university application</h1>
 
@@ -39,7 +56,7 @@
 <p>
     Thank you for your recent application to join us at the University of
     Awesome's science faculty to study as part of your
-    PhD (Doctor of Philosophy) next year. I will answer your
+    <abbr title ="Doctor of Philosophy">PhD</abbr> Doctor of Philosophy next year. I will answer your
     questions one by one, in the following sections.
 </p>
 
@@ -52,13 +69,15 @@
 </p>
 
 <ul>
-    <li>First semester: 9 September 2016</li>
-   <li> Second semester: 15 January 2017</li>
-    <li>Third semester: 2 May 2017</li>
+    <li>First semester:<time datetime="2016-09-09">9 September 2016</time></li>
+    <li> Second semester:<time datetime="2017-01-15">15 January 2017</time></li>
+    <li>Third semester:<time datetime="2017-05-02">2 May 2017</time></li>
 </ul>
 
-Please let me know if this is ok, and if so which start date you would
-prefer.
+<p>
+    Please let me know if this is ok, and if so which start date you would
+    prefer.
+</p>
 
 <h2>Subjects of study</h2>
 
@@ -71,22 +90,22 @@ ideas you submitted we were most intrigued by are as follows, in order of
 priority:
 </p>
 
-<p>
-    <ol>
-<li>
-    Turning H<sub>2</sub>O into wine, and the health benefits of Resveratrol
-    (C<sub>14</sub>H<sub>12</sub>O<sub>3</sub>).
-</li>
-<li>
-    Measuring the effect on performance of funk bass players at temperatures
-    exceeding 30°C (86°F), when the audience size exponentially increases
-    (effect of 3 × 10<sup>3 </sup>increasing to 3 × 10<sup>4</sup>).
-</li>
-<li>
-    HTML, Hypertext Markup Language, and CSS,
-    Cascading Style Sheets, constructs for representing musical scores.</ol>
-</li>
-</p>
+<ol>
+    <li>
+        Turning H<sub>2</sub>O into wine, and the health benefits of Resveratrol
+        (C<sub>14</sub>H<sub>12</sub>O<sub>3</sub>).
+    </li>
+    <li>
+        Measuring the effect on performance of funk bass players at temperatures
+        exceeding 30°C (86°F), when the audience size exponentially increases
+        (effect of 3 × 10<sup>3 </sup>increasing to 3 × 10<sup>4</sup>).
+    </li>
+    <li>
+        <abbr title="Hypertext Markup Language">HTML</abbr> Hypertext Markup Language and
+       <abbr title="Cascading Style Sheets">CSS</abbr> Cascading Style Sheets for representing musical scores.
+    </li>
+</ol>    
+
 <p>
     So please can you provide more information on each of these subjects,
     including how long you'd expect the research to take, required staff and
@@ -101,38 +120,39 @@ priority:
     favorite dances are as follows, with definitions:
 </p>
 
-<p>
-   <dl> 
+
+<dl> 
    <dt> Polynesian chicken dance</dt>
-        <dd>
+   <dd>
             A little known but very influential dance dating back as far as
-            300 BCE, a whole village would
+            300 <abbr title="Before common Era">BCE</abbr> a whole village would
             dance around in a circle like chickens, to encourage their livestock to
             be "fruitful".
-        </dd>
+    </dd>
     <dt>Icelandic brownian shuffle</dt>
-        <dd>
+    <dd>
             Before the Icelanders developed fire as a means of getting warm, they
             used to practice this dance, which involved huddling close together in a
             circle on the floor, and shuffling their bodies around in imperceptibly
             tiny, very rapid movements. One of my fellow students used to say that
             he thought this dance inspired modern styles such as Twerking.
-        </dd>
-   <dt> Arctic robot dance</dt>
-        <dd>
+    </dd>
+    <dt> Arctic robot dance</dt>
+    <dd>
             An interesting example of historic misinformation, English explorers in
             the 1960s believed to have discovered a new dance style characterized by
             "robotic", stilted movements, being practiced by inhabitants of Northern
             Alaska and Canada. Later on however it was discovered that they were
             just moving like this because they were really cold.
-        </dd>
-    </dl>
-</p>
+    </dd>
+</dl>
+
 <p>Yours sincerely,</p>
 
 <p>Dr Eleanor Gaye</p>
-
-University of Awesome motto: Be awesome to each other. --
-The memoirs of Bill S Preston, Esq.
+<blockquote>
+University of Awesome motto: "Be awesome to each other". --
+<cite>The memoirs of Bill S Preston, Esq.</cite>
+</blockquote>
 </body>
 </html>
