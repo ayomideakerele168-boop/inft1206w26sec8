@@ -15,7 +15,6 @@
 
 <header>
    <h1>Planet data table</h1>
-   <th scope="col">Name</th>
 </header>
 
 <table>
@@ -23,7 +22,7 @@
    <colgroup>
      <col>
      <col class="column-border">
-     <col span="10">
+     <col span="9">
    </colgroup>
 
    <caption>
@@ -34,7 +33,8 @@
 
    <thead>
     <tr>
-        <th colspan="2"></th>
+        <th scope="col">Type</th>
+        <th scope="col">Name</th>
         <th scope="col">Mass (10<sup>24</sup>kg)</th>
         <th scope="col">Diameter (km)</th>
         <th scope="col">Density (kg/m<sup>3</sup>)</th>
@@ -76,9 +76,46 @@
         <td>Second planet from the Sun</td>
     </tr>
 
-    <tr>
 
+    <tr>
+        <th scope="row">Earth</th>
+        <td>5.97</td>
+        <td>12,756</td>
+        <td>5514</td>
+        <td>9.8</td>
+        <td>24.0</td>
+        <td>149.6</td>
+        <td>15</td>
+        <td>1</td>
+        <td>Our home planet</td>
     </tr>
+
+    <tr>
+        <th scope="row">Mars</th>
+        <td>0.642</td>
+        <td>6,792</td>
+        <td>3933</td>
+        <td>3.7</td>
+        <td>24.7</td>
+        <td>227.9</td>
+        <td>-65</td>
+        <td>2</td>
+        <td>The Red Planet</td>
+    </tr>
+    <tr>
+        <th rowspan="2" scope="rowgroup">Gas giants</th>
+        <th scope="row">Jupiter</th>
+        <td>1898</td>
+        <td>142,984</td>
+        <td>1326</td>
+        <td>23.1</td>
+        <td>9.9</td>
+        <td>778.6</td>
+        <td>-110</td>
+        <td>95</td>
+        <td>The largest planet</td>
+    </tr> 
+
 
    </tbody>
 
