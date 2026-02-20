@@ -27,3 +27,12 @@ ul{
     padding: 30px;
     border-radius: 20px;
 }
+
+h1{
+    color: darkslategray;
+    font-size: 2rem;
+    border-bottom: 10px dotted purple;
+}
+
+
+
