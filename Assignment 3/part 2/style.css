@@ -1,3 +1,13 @@
+html {
+  font-family: "IBM Plex Serif", serif;
+}
+
+h1,
+h2 {
+  font-family: "Bevan", serif;
+}
+
+
 /* General setup */
 
 * {
@@ -11,6 +21,21 @@ body {
   max-width: 1400px;
 }
 
+body {
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+section h2 + p {
+  text-indent: 2rem;
+}
+
 /* Layout */
 
 main {
@@ -22,6 +47,8 @@ main {
 
 /* header and footer */
 
+
+
 header {
   border-bottom: 5px solid #aa6666;
 }
@@ -32,4 +59,47 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+a {
+  color: #aa6666;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #884444;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #cc4444;
+}
+
+
+a:focus {
+  outline: none;
+}
+
+
+a[href^="http"]::after {
+  content: " 🔗";
+  font-size: 0.8em;
+}
+
+
+ul,
+ol {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Custom bullet style */
+ul {
+  list-style-type: square;
 }
