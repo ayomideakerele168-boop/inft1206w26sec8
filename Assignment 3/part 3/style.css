@@ -23,6 +23,10 @@ img {
 }
 
 .grid {
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
   margin: 0 auto;
   max-width: 980px;
 }
@@ -32,14 +36,13 @@ nav {
   padding: 0.5em;
   position: sticky;
   top: 0;
-  z-index: 1000;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
-  padding: 0 20px; 
+  padding: 0; 
   list-style: none;
 }
 
@@ -53,6 +56,9 @@ nav a {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
 }
 
 .feature {
@@ -61,6 +67,19 @@ nav a {
   margin: 0 20px 20px 0;
 }
 
-nav{
-    
+.grid {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 980px;
 }
+
+article {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+}
+
+
