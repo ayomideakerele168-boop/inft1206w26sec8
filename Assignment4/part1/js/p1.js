@@ -1,8 +1,4 @@
-//<!--
-       // Name: Ayomide Akerele
-       //file: index.html
-       //date: March 20,2026
-       // -->//
+
 // Complete variable definitions and random functions
 
 const customName = document.getElementById("custom-name");
