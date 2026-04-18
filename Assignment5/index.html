@@ -40,7 +40,7 @@
 
     <main>
       <article>
-        <h1>The trouble with Bears</h1>
+        <h2 class="center">The trouble with Bears</h2>
 
         <p>By Evan Wild</p>
         
@@ -55,54 +55,55 @@
         <p>Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.</p>
   
         <table>
+          <caption>Types of bears and their characteristics</caption>
           <thead>
             <tr>
-              <td>Bear Type</td>
-              <td>Coat</td>
-              <td>Adult size</td>
-              <td>Habitat</td>
-              <td>Lifespan</td>
-              <td>Diet</td>
+             <th scope="col">Bear Type</th>
+             <th scope="col">Coat</th>
+             <th scope="col">Adult size</th>
+             <th scope="col">Habitat</th>
+             <th scope="col">Lifespan</th>
+             <th scope="col">Diet</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Wild</td>
-              <td>Brown or black</td>
-              <td>1.4 to 2.8 meters</td>
-              <td>Woods and forests</td>
-              <td>25 to 28 years</td>
-              <td>Fish, meat, plants</td>
+              <th scope="row">Wild</th>
+              <td scope= "row">Brown or black</td>
+              <td scope="row">1.4 to 2.8 meters</td>
+              <td scope="row">Woods and forests</td>
+              <td scope="row">25 to 28 years</td>
+              <td scope="row">Fish, meat, plants</td>
             </tr>
             <tr>
-              <td>Urban</td>
-              <td>North Face</td>
-              <td>18 to 22</td>
-              <td>Condos and coffee shops</td>
-              <td>20 to 32 years</td>
-              <td>Starbucks, sushi</td>
+              <th scope="row">Urban</th>
+              <td scope="row">North Face</td>
+              <td scope="row">18 to 22</td>
+              <td scope="row">Condos and coffee shops</td>
+              <td scope="row">20 to 32 years</td>
+              <td scope="row">Starbucks, sushi</td>
             </tr>
           </tbody>
         </table>
 
         <h2>Habitats and Eating habits</h2>
-        <br><br>
+        
         Wild bears eat a variety of meat, fish, fruit, nuts, and other natually growing ingredients. In general they will hunt for food themselves in woodland or rivers, but at a push they will track down their sustenance from farms or country houses. They tend to live in relative isolation, in caves, tents, or cottages.
-        <br><br>
+        
         <img src="media/wild-bear.jpg"  alt="Wild brown bear in a forest">
-        <br><br>
+        
         Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.
-        <br><br>
+        
         <img src="media/urban-bear.jpg" alt="Urban bear in a city environment">
-        <br><br>
+        
         Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.
-        <br><br>
+        
         <h2>Mating rituals</h2>
-        <br><br>
+        
         Bears are romantic creatures by nature, and will naturally look for a mate that they can spend the rest of their lives with. They will woo a potential suitor by making their dwelling look attractive — for example with cave paintings or a bed of reeds in the case of a wild bear, and mood lighting and a Michael Bublé CD in the case of an urban bear.
-        <br><br>
+        
         The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.
-        <br><br>
+        
         <audio controls>
           <source src="media/bear.mp3" type="audio/mpeg">
           <source src="media/bear.ogg" type="audio/ogg">
@@ -122,7 +123,7 @@
 
         </aside>
         <section class="comments">
-          <div class="show-hide">Show comments</div>
+          <button class="show-hide">Show comments</button>
 
           <div class="comment-wrapper">
 
@@ -130,12 +131,12 @@
 
             <form class="comment-form">
               <div class="flex-pair">
-                Your name:
-                <input type="text" name="name" id="name" placeholder="Enter your name">
+              <label for="name">Your name:</label>
+              <input type="text" name="name" id="name" placeholder="Enter your name">
               </div>
               <div class="flex-pair">
-                Your comment:
-                <input type="text" name="comment" id="comment" placeholder="Enter your comment">
+              <label for="comment">Your comment:</label>
+              <input type="text" name="comment" id="comment" placeholder="Enter your comment">
               </div>
               <div>
                 <input type="submit" value="Submit comment">
@@ -161,7 +162,7 @@
       </article>
 
       <div class="secondary">
-        <font size="6">Related</font>
+        <h2>Related</h2>
 
         <ul>
           <li><a href="#">The trouble with Bees</a></li>
